@@ -27,8 +27,6 @@ function Feed({posts}) {
 
         fetchPosts();
     },[handlePost]);//when we post a new post with Form.js, handlePost atom will be updated and this useEffect will run to refetch post, this time including new post
-
-    console.log(realtimePosts)
     
   return (
     <div className="space-y-6 pb-24 max-w-lg">
